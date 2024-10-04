@@ -1,3 +1,5 @@
+package exception.ex0;
+
 public class NetworkClientV0 {
 
     private final String address;

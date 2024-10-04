@@ -1,3 +1,5 @@
+package exception.ex01;
+
 public class NetworkClientV1 {
 
     private final String address;
@@ -9,6 +11,7 @@ public class NetworkClientV1 {
     }
 
     public String connect(){
+
         if(connectError){
             System.out.println(address + "서버 연결 실패");
             return "connectError";
@@ -18,6 +21,7 @@ public class NetworkClientV1 {
     }
 
     public String send(String data) {
+
         if (sendError) {
             System.out.println(address + " 서버에 데이터 전송 실패: " + data);
             return "sendError";
@@ -30,13 +34,14 @@ public class NetworkClientV1 {
     public void disconnect() {
         System.out.println(address + " 서버 연결 해제");
     }
+
     public void initError(String data) {
-        if (data.contains("error1")) {
+
+        if (data.contains("error1")) { // 연결 실패
             connectError = true;
         }
-        if (data.contains("error2")) {
+        if (data.contains("error2")) { //전송 실패
             sendError = true;
         }
     }
-
 }
