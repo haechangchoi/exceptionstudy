@@ -1,4 +1,4 @@
-package basic.unchecked;
+package exception.unchecked;
 
 public class Service {
 

@@ -23,9 +23,9 @@ public class NetworkServiceV1_2 {
 
         client.disconnect();
     }
+
     private static boolean isError(String resultCode) {
         return !resultCode.equals("success");
     }
-
 
 }

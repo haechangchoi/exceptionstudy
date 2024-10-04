@@ -1,7 +1,7 @@
-package basic.unchecked;
+package exception.unchecked;
 
 public class MyUncheckedException extends RuntimeException {
-    MyUncheckedException(String message) {
+    public MyUncheckedException(String message) {
         super(message);
     }
 }

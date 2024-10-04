@@ -1,9 +1,10 @@
+package exception.checked;
+
 public class Service {
 
     Client client = new Client();
 
     public void callCatch(){
-
         try{
             client.call();
         } catch (MyCheckedException e){
